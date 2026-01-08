@@ -1,0 +1,29 @@
+{
+  "name": "redis-rate-limiter",
+  "version": "1.0.0",
+  "description": "A comprehensive rate limiting library using Redis with multiple algorithms",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "example": "ts-node examples/express-server.ts",
+    "test": "ts-node examples/usage-examples.ts"
+  },
+  "keywords": [
+    "rate-limiter",
+    "redis",
+    "middleware",
+    "api-limiter"
+  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
